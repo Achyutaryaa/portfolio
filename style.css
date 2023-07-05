@@ -88,7 +88,7 @@ section {
     padding: 10px;
 }
 .name {
-    font-size: 4.7em;
+    font-size: 4em;
 }
 
 .name::first-letter {
