@@ -454,7 +454,7 @@ footer h6 {
     }
 }
 
-@media  screen and (max-width: 280px) {
+@media  screen and (max-width: 300px) {
     nav li a {
         font-size: .8em;
     }
