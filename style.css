@@ -358,6 +358,13 @@ footer h6 {
     .sec1 .div2 p {
         font-size: 1.3em;
     }
+    
+    html {
+        scroll-padding-top: 30px;
+    }
+    main {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 400px) {
