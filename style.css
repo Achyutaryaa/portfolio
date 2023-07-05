@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.margin {
+    padding: 20px;
+}
+.fonts {
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-decoration: underline red;
+}
+.text {
+    font-size: 1.5em;
+    text-align: justify;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 45px;
+}
+/* ======================================= */
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background: black;
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    padding: .1em .2em;
+    margin: 0 1em;
+    /* margin: 2rem; */
+    position: relative;
+    border-bottom: 3px solid black;
+}
+
+
+nav li a:hover {
+    border-bottom: 3px solid red;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    /* background: grey; */
+}
+
+/* Navigation ends */
+/* ================================================================================= */
+main {
+    margin-top: 45px;
+}
+section {
+    padding: 20px;
+}
+/* =================================================================================================== */
+/* Home section */
+.sec1 {
+    background: rgb(98, 98, 98);
+    display: flex;
+    padding: 0;
+}
+.sec1 div {
+    width: 50%;
+    width: 100%;
+}
+.sec1 img {
+    height: 100%;
+}
+.sec1 .div2 {
+    position: relative;
+    height: fit-content;
+    margin: auto 0;
+    padding: 10px;
+}
+.name {
+    font-size: 5em;
+}
+
+.name::first-letter {
+    color: red;
+}
+
+
+
+.sec1 .div2 p {
+    font-size: 2em;
+}
+/* Home section ends. */
+
+
+/* ====================================================================================================== */
+/* About section */
+.sec2 {
+    background-color: lightblue;
+}
+.sec2 p {
+    text-align: justify;
+}
+/* About section ends. */
+
+
+
+/* ============================================================================================== */
+/* Project section */
+.sec3 {
+    background-color: antiquewhite;
+    
+}
+.sec3 div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sec3 .div1 img {
+    width: 50%;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+.sec3 div div {
+    width: 20em;
+    height: 18em;
+    background-color: darkcyan;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    display: block;
+    text-align: center;
+}
+
+.sec3 div h4 {
+    font-size: 1.5em;
+}
+
+.sec3 .info {
+    opacity: 0;
+}
+.sec3 div div:hover .info {
+    opacity: 1;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+/* Project section ends. */
+
+
+/* ==================================================================================================== */
+/* Skill section */
+.sec4 {
+    background-color: rgb(234, 218, 249);
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background: white;
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+    display: inline-block;
+    background-image: linear-gradient(rgb(172, 250, 224), rgb(50, 224, 239));
+    padding: 15px;
+    border-radius: 1em;
+    transition: transform .5s ease-in-out, box-shadow .5s ease-in-out;
+    cursor: pointer;
+
+}
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px black;
+
+}
+.skill h4 {
+    font-size: 1.6em;
+    margin-bottom: .6em;
+    text-align: center;
+}
+.skill div {
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(213, 213, 213);
+    border-radius: 15px;
+}
+.skill .progress {
+    height: fit-content;
+    background-color: rgb(4, 159, 4);
+    color: white;
+    font-size: 9px;
+    padding: 2px;
+    text-align: right;
+    margin-bottom: 1em;
+}
+.skill p:last-child {
+    opacity: 0;
+    margin-top: .5em;
+    text-align: center;
+    border-top-style: double;
+    border-bottom-style: double;
+    transition-duration: 1s;
+    color: red;
+    font-weight: bold;
+}
+.skill:hover p:last-child {
+    opacity: 1;
+}
+/* Skill section ends */
+
+
+/* ======================================================================================================= */
+/* Contact section */
+.sec5 {
+    background: lightgoldenrodyellow;
+}
+.sec5 p {
+    margin-bottom: 1em;
+}
+.contact-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.contact-div img {
+    width: 7em;
+    margin: 1.5em;
+    border-radius: 1em;
+    display: inline-block;
+}
+
+/* ======================================================================================================= */
+/* Footer section */
+footer {
+    background-color: grey;
+    padding: 1em;
+}
+footer .name {
+    text-align: center;
+    font-size: 2em;
+}
+footer h6 {
+    text-align: center;
+    border-bottom-style: double;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+
+
+
+/* ============================================================================================== */
+/* Media Query */
+
+@media screen and (max-width: 965px) {
+    nav li a {
+        margin: 0 .5em;
+    }
+    .sec1 img {
+        width: 90%;
+    }
+    .name {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav li a {
+        margin: 0 .4em;
+        font-size: 2em;
+    }
+    .name {
+        font-size: 3em;
+    }
+    main {
+        padding-top: 0;
+    }
+    html {
+        scroll-padding-top: 45px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav li a {
+        margin: 0 .3em;
+        font-size: 1.5em;
+    }
+    .text {
+        font-size: 1.2em;
+    }
+    .fonts {
+        font-size: 1.7em;
+    }
+    html {
+        scroll-padding-top: 35px;
+    }
+    main {
+        margin-top: 35px;
+    }
+
+    .sec1 {
+        display: block;
+    }
+    .sec1 .div1 {
+        display: flex;
+        justify-content: center;
+        border-bottom: .5em rgb(237, 70, 195) double;
+    }
+    .sec1 .div1 img {
+        height: 95%;
+    }
+    .sec1 .div2 {
+        padding: 4em 0;
+    }
+    .sec1 h1, p {
+        text-align: center;
+    }
+    .sec3 div div {
+        width: 90%;
+    }
+    .skill {
+        margin: 10px;
+    }
+    .contact-div img {
+        margin: .8em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav li a {
+        margin: 0 .1em;
+        font-size: 1.3em;
+    }
+    .name {
+        font-size: 2em;
+    }
+    .sec1 .div2 p {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        scroll-padding-top: 28px;
+    }
+    
+    main {
+        margin-top: 28px;
+    }
+    nav li a {
+        font-size: 1.2em;
+        
+    }
+    .sec1 .div2 {
+        padding: 2em 0;
+    }
+    .sec1 .div2 p {
+        font-size: 1em;
+    }
+    .text {
+        font-size: 1.2em;
+    }
+    .skill {
+        height: 80%;
+        width: 80%;
+    }
+    .contact-div a {
+        width: fit-content;
+    }
+    .contact-div img {
+        margin: .2em;
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 335px) {
+    html {
+        scroll-padding-top: 24px;
+    }
+    main {
+        margin-top: 24px;
+    }
+    nav li a {
+        font-size: 1em;
+    }
+    .sec1 .div2 p {
+        font-size: .8em;
+    }
+    .fonts {
+        font-size: 1.2em;
+    }
+    .text {
+        font-size: .8em;
+    }
+    .sec3 div h4 {
+        font-size: 1.2em;
+    }
+    .skill h4 {
+        font-size: 1.2em;
+    }
+}
+
+@media  screen and (max-width: 280px) {
+    nav li a {
+        font-size: .8em;
+    }
+    html {
+        scroll-padding-top: 20px;
+    }
+    main {
+        margin-top: 20px;
+    }
+}
