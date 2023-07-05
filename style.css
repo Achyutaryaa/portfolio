@@ -87,6 +87,12 @@ section {
     margin: auto 0;
     padding: 10px;
 }
+.sec1 .div2 p {
+    font-size: 1.5em;
+    color: white;
+    letter-spacing: 4px;
+    word-spacing: 7px;
+}
 .name {
     font-size: 5em;
 }
@@ -94,9 +100,6 @@ section {
 .name::first-letter {
     color: red;
 }
-
-
-
 
 /* Home section ends. */
 
@@ -293,6 +296,9 @@ footer h6 {
     .name {
         font-size: 3em;
     }
+    .sec1 .div2 p {
+        font-size: 1.1em;
+    }
     main {
         margin-top: 48px;
     }
@@ -351,7 +357,11 @@ footer h6 {
     .sec1 .div2 {
         padding: 4em 0;
     }
-    .sec1 h1 {
+    .sec1 .div2 p {
+        font-size: 1em;
+        margin-top: .5em;
+    }
+    .sec1 h1, p {
         text-align: center;
     }
     .sec3 div div {
@@ -371,10 +381,7 @@ footer h6 {
         font-size: 1.4em;
     }
     .name {
-        font-size: 2em;
-    }
-    .sec1 .div2 p {
-        font-size: 1.3em;
+        font-size: 2.5em;
     }
     html {
         scroll-padding-top: 30px;
@@ -401,6 +408,9 @@ footer h6 {
     nav li a {
         font-size: 1.2em;
         
+    }
+    .name {
+        font-size: 2.2em;
     }
     .sec1 .div2 {
         padding: 2em 0;
@@ -455,5 +465,20 @@ footer h6 {
     }
     main {
         margin-top: 20px;
+    }
+    .name {
+        font-size: 1.7em;
+    }
+    .sec1 .div2 p {
+        font-size: .8em;
+    }
+    footer .name,h3 {
+        font-size: 1.3em;
+    }
+    footer h3 {
+        font-size: 1em;
+    }
+    .text {
+        font-size: 1em;
     }
 }
