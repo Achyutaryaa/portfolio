@@ -97,9 +97,7 @@ section {
 
 
 
-.sec1 .div2 p {
-    font-size: 2em;
-}
+
 /* Home section ends. */
 
 
@@ -353,7 +351,7 @@ footer h6 {
     .sec1 .div2 {
         padding: 4em 0;
     }
-    .sec1 h1, p {
+    .sec1 h1 {
         text-align: center;
     }
     .sec3 div div {
@@ -407,9 +405,6 @@ footer h6 {
     .sec1 .div2 {
         padding: 2em 0;
     }
-    .sec1 .div2 p {
-        font-size: 1em;
-    }
     .text {
         font-size: 1.2em;
     }
@@ -436,9 +431,6 @@ footer h6 {
     }
     nav li a {
         font-size: 1em;
-    }
-    .sec1 .div2 p {
-        font-size: .8em;
     }
     .fonts {
         font-size: 1.2em;
