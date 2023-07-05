@@ -21,7 +21,7 @@
 }
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 45px;
+    scroll-padding-top: 55px;
 }
 /* ======================================= */
 nav {
@@ -43,9 +43,9 @@ nav li a {
     color: inherit;
     display: block;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 2.5em;
     padding: .1em .2em;
-    margin: 0 1em;
+    margin: 0 .5em;
     /* margin: 2rem; */
     position: relative;
     border-bottom: 3px solid black;
@@ -62,7 +62,7 @@ nav li a:hover {
 /* Navigation ends */
 /* ================================================================================= */
 main {
-    margin-top: 45px;
+    margin-top: 55px;
 }
 section {
     padding: 20px;
@@ -271,6 +271,7 @@ footer h6 {
 @media screen and (max-width: 965px) {
     nav li a {
         margin: 0 .5em;
+        font-size: 2.3em
     }
     .sec1 img {
         width: 90%;
@@ -278,15 +279,27 @@ footer h6 {
     .name {
         font-size: 4em;
     }
+    main {
+        margin-top: 53px;
+    }
+    html {
+        scroll-padding-top: 53px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     nav li a {
         margin: 0 .4em;
-        font-size: 2em;
+        font-size: 2.1em;
     }
     .name {
         font-size: 3em;
+    }
+    main {
+        margin-top: 48px;
+    }
+    html {
+        scroll-padding-top: 48px;
     }
 }
 
@@ -370,6 +383,12 @@ footer h6 {
     }
     main {
         margin-top: 30px;
+    }
+    .text {
+        font-size: 1em;
+    }
+    section {
+        padding: 7px;
     }
 }
 
