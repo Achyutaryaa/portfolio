@@ -288,11 +288,18 @@ footer h6 {
     .name {
         font-size: 3em;
     }
+}
+
+@media screen and (max-width: 650px) {
+    nav li a {
+        margin: 0 .5em;
+        font-size: 1.7em;
+    }
     main {
-        padding-top: 0;
+        margin-top: 39px;
     }
     html {
-        scroll-padding-top: 45px;
+        scroll-padding-top: 39px;
     }
 }
 
@@ -350,7 +357,7 @@ footer h6 {
 @media screen and (max-width: 500px) {
     nav li a {
         margin: 0 .1em;
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
     .name {
         font-size: 2em;
@@ -358,7 +365,6 @@ footer h6 {
     .sec1 .div2 p {
         font-size: 1.3em;
     }
-    
     html {
         scroll-padding-top: 30px;
     }
@@ -402,7 +408,7 @@ footer h6 {
 
 }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 350px) {
     html {
         scroll-padding-top: 24px;
     }
