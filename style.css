@@ -237,10 +237,12 @@ section {
     justify-content: center;
     
 }
+.contact-div a {
+    margin: 1.5em;
+}
 
 .contact-div img {
     width: 7em;
-    margin: 1.5em;
     border-radius: 1em;
     display: inline-block;
     transition: transform .5s ease-in-out, box-shadow .5s ease-in-out;
