@@ -320,6 +320,12 @@ footer h6 {
         margin: 0 .5em;
         font-size: 1.7em;
     }
+    .contact-div a {
+        margin: 1em;
+    }
+    .contact-div img {
+        width: 6em;
+    }
     main {
         margin-top: 39px;
     }
@@ -390,6 +396,9 @@ footer h6 {
     }
     .name {
         font-size: 2.5em;
+    }
+    .contact-div a {
+        margin: .7em;
     }
     html {
         scroll-padding-top: 30px;
