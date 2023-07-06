@@ -243,7 +243,13 @@ section {
     margin: 1.5em;
     border-radius: 1em;
     display: inline-block;
+    transition: transform .5s ease-in-out, box-shadow .5s ease-in-out;
 }
+.contact-div img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px black;
+}
+/* Contact section ends */
 
 /* ======================================================================================================= */
 /* Footer section */
@@ -262,7 +268,7 @@ footer h6 {
     margin: 0 auto;
     margin-top: 2em;
 }
-
+/* Footer section ends */
 
 
 
