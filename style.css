@@ -389,9 +389,20 @@ footer h6 {
     }
 }
 
+@media screen and (max-width: 550px) {
+    .skills {
+        justify-content: space-evenly;
+    }
+}
+
 @media screen and (max-width: 500px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
     nav li a {
-        margin: 0 .1em;
+        margin: 0;
         font-size: 1.4em;
     }
     .name {
