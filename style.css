@@ -462,7 +462,7 @@ footer h6 {
         flex-wrap: wrap;
         justify-content: space-evenly;
         top: auto;
-        bottom: 0;
+        bottom: 5px;
     }
 
     nav li a {
@@ -498,7 +498,7 @@ footer h6 {
     }
 
     footer {
-        margin-bottom: 33px;
+        margin-bottom: 38px;
     }
 }
 
@@ -542,7 +542,7 @@ footer h6 {
         width: 100px;
     }
     footer {
-        margin-bottom: 28px;
+        margin-bottom: 33px;
     }
 }
 
@@ -575,7 +575,7 @@ footer h6 {
         font-size: 1.2em;
     }
     footer {
-        margin-bottom: 24px;
+        margin-bottom: 29px;
     }
 }
 
@@ -601,7 +601,7 @@ footer h6 {
     }
 
     footer {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
     footer .name,
