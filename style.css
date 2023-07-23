@@ -4,9 +4,11 @@
     box-sizing: border-box;
     /* border: 1px solid red; */
 }
+
 .margin {
     padding: 20px;
 }
+
 .fonts {
     word-spacing: 8px;
     letter-spacing: 2px;
@@ -15,14 +17,17 @@
     margin-bottom: 1em;
     text-decoration: underline red;
 }
+
 .text {
     font-size: 1.5em;
     text-align: justify;
 }
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 55px;
 }
+
 /* ======================================= */
 nav {
     position: fixed;
@@ -64,9 +69,11 @@ nav li a:hover {
 main {
     margin-top: 55px;
 }
+
 section {
     padding: 20px;
 }
+
 /* =================================================================================================== */
 /* Home section */
 .sec1 {
@@ -74,25 +81,30 @@ section {
     display: flex;
     padding: 0;
 }
+
 .sec1 div {
     width: 50%;
     width: 100%;
 }
+
 .sec1 img {
     height: 100%;
 }
+
 .sec1 .div2 {
     position: relative;
     height: fit-content;
     margin: auto 0;
     padding: 10px;
 }
+
 .sec1 .div2 p {
     font-size: 1.5em;
     color: white;
     letter-spacing: 4px;
     word-spacing: 7px;
 }
+
 .name {
     font-size: 5em;
 }
@@ -109,9 +121,11 @@ section {
 .sec2 {
     background-color: lightblue;
 }
+
 .sec2 p {
     text-align: justify;
 }
+
 /* About section ends. */
 
 
@@ -120,18 +134,21 @@ section {
 /* Project section */
 .sec3 {
     background-color: antiquewhite;
-    
+
 }
+
 .sec3 div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .sec3 .div1 img {
     width: 50%;
     border-radius: 1em;
     margin-top: 1em;
 }
+
 .sec3 div div {
     width: 20em;
     height: 18em;
@@ -150,11 +167,13 @@ section {
 .sec3 .info {
     opacity: 0;
 }
+
 .sec3 div div:hover .info {
     opacity: 1;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
 }
+
 /* Project section ends. */
 
 
@@ -163,6 +182,7 @@ section {
 .sec4 {
     background-color: rgb(234, 218, 249);
 }
+
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -182,22 +202,26 @@ section {
     cursor: pointer;
 
 }
+
 .skill:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px black;
 
 }
+
 .skill h4 {
     font-size: 1.6em;
     margin-bottom: .6em;
     text-align: center;
 }
+
 .skill div {
     height: fit-content;
     width: 100%;
     background-color: rgb(213, 213, 213);
     border-radius: 15px;
 }
+
 .skill .progress {
     height: fit-content;
     background-color: rgb(4, 159, 4);
@@ -207,6 +231,7 @@ section {
     text-align: right;
     margin-bottom: 1em;
 }
+
 .skill p:last-child {
     opacity: 0;
     margin-top: .5em;
@@ -217,9 +242,11 @@ section {
     color: red;
     font-weight: bold;
 }
+
 .skill:hover p:last-child {
     opacity: 1;
 }
+
 /* Skill section ends */
 
 
@@ -228,15 +255,18 @@ section {
 .sec5 {
     background: lightgoldenrodyellow;
 }
+
 .sec5 p {
     margin-bottom: 1em;
 }
+
 .contact-div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
+
 .contact-div a {
     margin: 1.5em;
 }
@@ -247,10 +277,12 @@ section {
     display: inline-block;
     transition: transform .5s ease-in-out, box-shadow .5s ease-in-out;
 }
+
 .contact-div img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px black;
 }
+
 /* Contact section ends */
 
 /* ======================================================================================================= */
@@ -259,10 +291,12 @@ footer {
     background-color: grey;
     padding: 1em;
 }
+
 footer .name {
     text-align: center;
     font-size: 2em;
 }
+
 footer h6 {
     text-align: center;
     border-bottom-style: double;
@@ -270,6 +304,7 @@ footer h6 {
     margin: 0 auto;
     margin-top: 2em;
 }
+
 /* Footer section ends */
 
 
@@ -282,15 +317,19 @@ footer h6 {
         margin: 0 .5em;
         font-size: 2.3em
     }
+
     .sec1 img {
         width: 90%;
     }
+
     .name {
         font-size: 4em;
     }
+
     main {
         margin-top: 53px;
     }
+
     html {
         scroll-padding-top: 53px;
     }
@@ -301,15 +340,19 @@ footer h6 {
         margin: 0 .4em;
         font-size: 2.1em;
     }
+
     .name {
         font-size: 3em;
     }
+
     .sec1 .div2 p {
         font-size: 1.1em;
     }
+
     main {
         margin-top: 48px;
     }
+
     html {
         scroll-padding-top: 48px;
     }
@@ -320,15 +363,19 @@ footer h6 {
         margin: 0 .5em;
         font-size: 1.7em;
     }
+
     .contact-div a {
         margin: 1em;
     }
+
     .contact-div img {
         width: 6em;
     }
+
     main {
         margin-top: 39px;
     }
+
     html {
         scroll-padding-top: 39px;
     }
@@ -340,19 +387,24 @@ footer h6 {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     nav li a {
         margin: 0 .3em;
         font-size: 1.5em;
     }
+
     .text {
         font-size: 1.2em;
     }
+
     .fonts {
         font-size: 1.7em;
     }
+
     html {
         scroll-padding-top: 35px;
     }
+
     main {
         margin-top: 35px;
     }
@@ -360,30 +412,39 @@ footer h6 {
     .sec1 {
         display: block;
     }
+
     .sec1 .div1 {
         display: flex;
         justify-content: center;
         border-bottom: .5em rgb(237, 70, 195) double;
     }
+
     .sec1 .div1 img {
         height: 95%;
     }
+
     .sec1 .div2 {
         padding: 4em 0;
     }
+
     .sec1 .div2 p {
         font-size: 1em;
         margin-top: .5em;
     }
-    .sec1 h1, p {
+
+    .sec1 h1,
+    p {
         text-align: center;
     }
+
     .sec3 div div {
         width: 90%;
     }
+
     .skill {
         margin: 10px;
     }
+
     .contact-div img {
         margin: .8em;
     }
@@ -396,7 +457,7 @@ footer h6 {
 }
 
 @media screen and (max-width: 500px) {
-     nav {
+    nav {
         height: fit-content;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -407,6 +468,7 @@ footer h6 {
     nav li a {
         margin: 0;
         font-size: 1.4em;
+        padding: 0 5px;
     }
 
     .name {
@@ -441,86 +503,116 @@ footer h6 {
 }
 
 @media screen and (max-width: 400px) {
-    html {
+    /* html {
         scroll-padding-top: 28px;
     }
-    
+
     main {
         margin-top: 28px;
-    }
+    } */
+
     nav li a {
         font-size: 1.2em;
-        
+
     }
+
     .name {
         font-size: 2.2em;
     }
+
     .sec1 .div2 {
         padding: 2em 0;
     }
+
     .text {
         font-size: 1.2em;
     }
+
     .skill {
         height: 80%;
         width: 80%;
     }
+
     .contact-div a {
         width: fit-content;
     }
+
     .contact-div img {
         margin: .2em;
         width: 100px;
     }
-
+    footer {
+        margin-bottom: 28px;
+    }
 }
 
 @media screen and (max-width: 350px) {
-    html {
+    /* html {
         scroll-padding-top: 24px;
     }
+
     main {
         margin-top: 24px;
-    }
+    } */
+
     nav li a {
         font-size: 1em;
     }
+
     .fonts {
         font-size: 1.2em;
     }
+
     .text {
         font-size: .8em;
     }
+
     .sec3 div h4 {
         font-size: 1.2em;
     }
+
     .skill h4 {
         font-size: 1.2em;
     }
+    footer {
+        margin-bottom: 24px;
+    }
 }
 
-@media  screen and (max-width: 300px) {
+@media screen and (max-width: 300px) {
     nav li a {
         font-size: .8em;
     }
-    html {
+
+    /* html {
         scroll-padding-top: 20px;
     }
+
     main {
         margin-top: 20px;
-    }
+    } */
+
     .name {
         font-size: 1.7em;
     }
+
     .sec1 .div2 p {
         font-size: .8em;
     }
-    footer .name,h3 {
+
+    footer {
+        margin-bottom: 20px;
+    }
+
+    footer .name,
+    h3 {
         font-size: 1.3em;
     }
+
     footer h3 {
         font-size: 1em;
     }
+
     .text {
         font-size: 1em;
     }
