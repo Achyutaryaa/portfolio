@@ -58,7 +58,6 @@ nav li a:hover {
     border-bottom: 3px solid red;
     transition-delay: 0.1s;
     transition-duration: 0.5s;
-    /* background: grey; */
 }
 
 /* Navigation ends */
@@ -100,6 +99,8 @@ section {
 
 .name {
     font-size: 5em;
+    transition: all 0.3s ease-in-out, opacity 1.5s ease-in-out; /* Add opacity transition */
+
 }
 
 .name::first-letter {
@@ -277,6 +278,15 @@ section {
 footer {
     background-color: grey;
     padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer.div {
+    flex-direction: row;
+    display: inline-block;
+    
 }
 
 footer .name {
@@ -287,6 +297,7 @@ footer .name {
 footer h6 {
     text-align: center;
     border-bottom-style: double;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
     margin-top: 2em;
@@ -523,6 +534,7 @@ footer h6 {
     }
 
     .contact-div a {
+        width: -moz-fit-content;
         width: fit-content;
     }
 
