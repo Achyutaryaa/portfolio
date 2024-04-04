@@ -396,6 +396,9 @@ footer h6 {
 }
 
 @media screen and (max-width: 650px) {
+    body {
+        font-family: fantasy;
+    }
     nav li a {
         margin: 0 .5em;
         font-size: 1.7em;
