@@ -17,7 +17,9 @@
     margin-bottom: 1em;
     text-decoration: underline red;
 }
-
+body {
+    font-family: Dancing Script, cursive;
+}
 .text {
     font-size: 1.5em;
     text-align: justify;
@@ -168,23 +170,23 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.sec3 .div1 img {
-    width: 50%;
-    border-radius: 1em;
-    margin-top: 1em;
+    flex-grow: 1;
 }
 
 .sec3 div div {
     width: 20em;
     height: 18em;
-    background-color: darkcyan;
+    background: linear-gradient(45deg, rgb(96, 115, 219) 50%, rgb(219, 26, 177) 50%);
     padding: 1em;
     margin: 1em;
     border-radius: 1em;
     display: block;
     text-align: center;
+}
+
+.sec3 div div:hover {
+    background: linear-gradient(45deg, rgb(96, 115, 219), rgb(219, 26, 177));
+
 }
 
 .sec3 div h4 {
@@ -217,8 +219,8 @@ section {
 }
 
 .skill {
-    height: 200px;
-    width: 150px;
+    /* height: 200px; */
+    width: 400px;
     margin: 20px;
     background-image: linear-gradient(rgb(172, 250, 224), rgb(50, 224, 239));
     padding: 15px;
@@ -278,7 +280,7 @@ section {
 /* ======================================================================================================= */
 /* Contact section */
 .sec5 {
-    background: lightgoldenrodyellow;
+    background: linear-gradient(45deg, rgb(203, 203, 116), rgb(122, 122, 226));
 }
 
 .sec5 p {
@@ -312,7 +314,8 @@ section {
 /* ======================================================================================================= */
 /* Footer section */
 footer {
-    background-color: grey;
+    background-color: rgb(30, 29, 29);
+    color: wheat;
     padding: 1em;
     display: flex;
     justify-content: space-between;
