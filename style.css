@@ -77,8 +77,10 @@ section {
 /* Home section */
 .sec1 {
     background: rgb(98, 98, 98);
+    background: linear-gradient(50deg, rgb(84, 193, 138), rgb(109, 109, 241));
     display: flex;
     padding: 0;
+    max-height: 100vh;
 }
 
 .sec1 .div1 img {
@@ -109,7 +111,7 @@ section {
 }
 
 .name::first-letter {
-    color: red;
+    color: rgb(159, 216, 26);
 }
 
 /* Home section ends. */
