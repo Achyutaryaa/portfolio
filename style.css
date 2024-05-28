@@ -80,7 +80,8 @@ section {
     background: linear-gradient(50deg, rgb(84, 193, 138), rgb(109, 109, 241));
     display: flex;
     padding: 0;
-    max-height: 100vh;
+    height: 100vh;
+    max-height: 1400px;
 }
 
 .sec1 .div1 img {
@@ -461,33 +462,23 @@ footer h6 {
     }
 
     .sec1 {
-        display: block;
+        /* display: block; */
+        flex-direction: column;
+        height: 85vh;
+        justify-content: space-evenly;
     }
 
     .sec1 .div1 {
-        display: flex;
-        justify-content: center;
         border-bottom: .5em rgb(237, 70, 195) double;
     }
-
     .sec1 .div1 img {
-        height: 95%;
+        display: block;
+        margin: 0 auto;
     }
 
-    .sec1 .div2 {
-        padding: 4em 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .sec1 .div2 p {
-        font-size: 1em;
-        margin-top: .5em;
-    }
-
-    .sec1 h1,
-    p {
+    .sec1 h1, p {
         text-align: center;
+        width: 100%;
     }
 
     .sec3 div div {
