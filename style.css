@@ -19,6 +19,7 @@
 }
 body {
     font-family: Dancing Script, cursive;
+    font-family: "Questrial", sans-serif;
 }
 .text {
     font-size: 1.5em;
@@ -90,7 +91,7 @@ section {
 }
 
 .sec1 .div2 {
-    display: flex;
+    display: block;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -102,6 +103,32 @@ section {
     color: white;
     letter-spacing: 4px;
     word-spacing: 7px;
+}
+
+#resume {
+    border: 1px dashed blue;
+    background-color: rgb(237, 225, 225);
+    color: black;
+    width: fit-content;
+    padding: 12pt 25pt;
+    border-radius: 20pt;
+    margin-top: 1rem;
+    margin-left: 0;
+    font-size: 1rem;
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+#resume span {
+    font-weight: bold;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: rgb(148, 148, 26); }
+    100% { color: red; }
 }
 
 .name {
@@ -479,6 +506,12 @@ footer h6 {
     .sec1 h1, p {
         text-align: center;
         width: 100%;
+    }
+
+    #resume {
+        margin: 0 auto;
+        font-size: .7rem;
+        padding: 5pt 9pt;
     }
 
     .sec3 div div {
