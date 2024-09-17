@@ -3,222 +3,120 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Achyutarya Raaz</title>
+    <title>Achyutarya Raaz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="pics/Gullu.ico">
 </head>
 
 <body>
     <header>
         <nav>
-            <li><a class="nav-btn" href="#Home">Home</a></li>
-            <li><a class="nav-btn" href="#Abouts">Abouts</a></li>
-            <li><a class="nav-btn" href="#Projects">Projects</a></li>
-            <li><a class="nav-btn" href="#Skills">Skills</a></li>
-            <li><a class="nav-btn" href="#Contacts">Contacts</a></li>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#project">PROJECT</a>
+            <a href="#skill">SKILL</a>
+            <a href="#contact">CONTACT</a>
         </nav>
-
     </header>
     <main>
-        <section id="Home" class="sec1">
-            <div class="div1">
-                <img src="pics/Aarya.png" alt="Cover Pic">
+        <section class="portfolio" id="home">
+            <div class="portfolio-pic">
+                <img src="./pics/Aarya.png" alt="portfolio Pic">
             </div>
-            <div class="div2">
-                <!-- <h1 class="name">Achyutarya Raaz</h1> -->
-                <h1 class="name" id="name"></h1>
-                <p>A <b>Frontend Developer</b>.</p>
-                <br>
-                <p id="resume">Download <span>RESUME</span></p>
+            <div class="portfolio-details">
+                <h1 id="name">Achyutarya Raaz</h1>
+                <h3>A Front-End Developer</h3>
+                <p id="resume">Download <span>resume</span></p>
             </div>
         </section>
-        <section id="Abouts" class="sec2">
-            <h2 class="fonts">Abouts</h2>
-            <p class="margin text">
-                Hello Everyone! I'm Achyutarya Raaz. This is my Portfolio where you can directly interact with me
-                through different <b>social media</b> platforms. I'm here to help you and make <b>Strong</b> India.
+        <section class="about-field" id="about">
+            <h2 class="nav-ref">Abouts</h2>
+            <p id="info">
+                I am a 3nd-year computer science student at Quantum University, Roorkee. My passion for computers and
+                technology began at a young age, and it has been a driving force in my life ever since. I am dedicated
+                to expanding my knowledge and skills in computer science, with a particular interest in software
+                development and cyber security. Throughout my studies, I have actively sought out opportunities to work
+                on various projects and further enhance my understanding of programming languages and algorithms.
+
+                Outside of my academic pursuits, I have also participated in coding competitions and hackathons, where I
+                have had the opportunity to collaborate with peers and put my problem-solving abilities to the test.
+                These experiences have not only strengthened my technical skills but have also provided me with valuable
+                insights into working effectively within a team. <br><br>
+
+                In addition to my technical interests, I am also passionate about contributing to the community. I have
+                volunteered with local organizations to teach basic computer skills to underprivileged children,
+                allowing me to share my knowledge and foster a greater appreciation for the potential of technology.
                 <br><br>
-                I'm currently pursuing B Tech from Quantum University, Roorkee.
+
+                As I continue on my academic journey, I am committed to seizing every opportunity to further my skills,
+                broaden my understanding, and ultimately make a positive impact in the field of computer science. I am
+                excited about the possibilities that lie ahead and am eager to continue learning and growing as a
+                computer scientist.
             </p>
-            <div id="saveSoil">
-                <a href="https://consciousplanet.org/en" target="_blank">SAVE SOIL</a>
+            <div><a href="https://consciousplanet.org/en" target="_blank">SAVE SOIL</a></div>
+        </section>
+        <section class="project-field" id="project">
+            <h2 class="nav-ref">Projects</h2>
+            <div class="hexagon-container">
+                <div class="hexagon"><a href="">Personal Website</a></div>
+                <div class="hexagon"><a href="">Game Project</a></div>
+                <div class="hexagon"><a href="">To-Do list</a></div>
+                <div class="hexagon"><a href="">Area calculator for triangle</a></div>
+                <div class="hexagon"><a href="">Temperature Convertor</a></div>
             </div>
         </section>
-        <section id="Projects" class="sec3">
-            <h2 class="fonts">Projects</h2>
-            <div>
-                <div class="div2">
-                    <h4>Achyutarya Raaz</h4>
-                    <p><i>(Personal website. Under development...)</i></p>
+        <section class="skill-field" id="skill">
+            <h2 class="nav-ref">Skills</h2>
+            <div class="skill-container">
+                <div class="front-end">
+                    <h2 class="nav-ref">Front-End</h2>
+                    <div class="skill-flex">
+                        <div>
+                            <div class="skill-hex hex1 bottom" id="html">HTML</div>
+                            <div class="skill-hex hex2 top" id="css">CSS</div>
+                            <div class="skill-hex hex3 bottom" id="js">JavaScript</div>
+                        </div>
+                        <div>
+                            <div class="skill-hex hex1 top" id="bt">BOOTSTRAP</div>
+                            <div class="skill-hex hex2 bottom" id="react">REACT</div>
+                            <div class="skill-hex hex3 top" id="angular">ANGULAR</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="div3">
-                    <h4>Game project</h4>
-                    <p>A JavaScript based game.</p>
-                    <a href="https://achyutaryaa.github.io/freeCodeCamp-gameProject" target="_blank"
-                        style="text-decoration: none;color:white;">Go to game...</a>
-                </div>
-                <div class="div4">
-                    <h4>todo list project</h4>
-                    <p>It is design and developed by me using some refrences.</p>
-                    <a href="https://achyutaryaa.github.io/todo-list" target="_blank"
-                        style="text-decoration: none;color:white;">Go to the project...</a>
-                </div>
-                <div class="div5">
-                    <h4>Area calculator for triangle</h4>
-                    <p>It is design and developed by me using some refrences of Coding Ninjas.</p>
-                    <a href="https://Achyutaryaa.github.io/calculate-triangle-area" target="_blank"
-                        style="text-decoration: none;color:white;">Go to the project...</a>
-                </div>
-                <div class="div6">
-                    <h4>Temperature convertor</h4>
-                    <p>It is design and developed by me using some refrences of Coding Ninjas.</p>
-                    <a href="https://Achyutaryaa.github.io/temperature-calculator" target="_blank"
-                        style="text-decoration: none;color:white;">Go to the project...</a>
+                <div class="back-end">
+                    <h2 class="nav-ref">Back-End</h2>
+                    <div class="skill-flex">
+                        <div>
+                            <div class="skill-hex hex1 bottom" id="c">C Lang</div>
+                            <div class="skill-hex hex2 top" id="cpp">C++</div>
+                            <div class="skill-hex hex3 bottom" id="java">JAVA</div>
+                        </div>
+                        <div>
+                            <div class="skill-hex hex1 top" id="sql">SQL</div>
+                            <div class="skill-hex hex2 bottom" id="python">PYTHON</div>
+                            <div class="skill-hex hex3 top" id="php">PHP</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section id="Skills" class="sec4">
-            <h2 class="fonts">Skills</h2>
-            <div class="skills">
-                <div class="skill">
-                    <h4>HTML</h4>
-                    <div>
-                        <div class="progress" style="width: 98%;">98%</div>
-                    </div>
-                    <p>Total experience of 3 years.</p>
-                    <p class="level">Medium</p>
-                </div>
-                <div class="skill">
-                    <h4>CSS</h4>
-                    <div>
-                        <div class="progress" style="width: 80%;">80%</div>
-                    </div>
-                    <p>Total experience of 2 year and 2 months.</p>
-                    <p class="level">Medium</p>
-                </div>
-                <div class="skill">
-                    <h4>JavaScript</h4>
-                    <div>
-                        <div class="progress" style="width: 40%;">40%</div>
-                    </div>
-                    <p>Total experience of 9 months.</p>
-                    <p class="level">Basics</p>
-                </div>
-                <div class="skill">
-                    <h4>RWD</h4>
-                    <div>
-                        <div class="progress" style="width: 70%;">70%</div>
-                    </div>
-                    <p>Total experience of 10 months.</p>
-                    <p class="level">Basics</p>
-                </div>
-                <div class="skill">
-                    <h4>C</h4>
-                    <div>
-                        <div class="progress" style="width: 60%;">60%</div>
-                    </div>
-                    <p>Total experience of 1 year and 6 months.</p>
-                    <p class="level">Medium</p>
-                </div>
-                <div class="skill">
-                    <h4>C++</h4>
-                    <div>
-                        <div class="progress" style="width: 60%;">60%</div>
-                    </div>
-                    <p>Total experience of 10 months.</p>
-                    <p class="level">Basics</p>
-                </div>
-                <div class="skill">
-                    <h4>Java</h4>
-                    <div>
-                        <div class="progress" style="width: 30%;">30%</div>
-                    </div>
-                    <p>Total experience of 6 months.</p>
-                    <p class="level">Basics</p>
-                </div>
-                <div class="skill">
-                    <h4>Python</h4>
-                    <div>
-                        <div class="progress" style="width: 20%;">20%</div>
-                    </div>
-                    <p>Total experience of 5 months.</p>
-                    <p class="level">Basics</p>
-                </div>
-                <div class="skill">
-                    <h4>SQL</h4>
-                    <div>
-                        <div class="progress" style="width: 20%;">20%</div>
-                    </div>
-                    <p>Total experience of 5 months.</p>
-                    <p class="level">Basics</p>
-                </div>
-                <div class="skill">
-                    <h4>PHP</h4>
-                    <div>
-                        <div class="progress" style="width: 15%;">15%</div>
-                    </div>
-                    <p>Total experience of 2 months.</p>
-                    <p class="level">Basics</p>
-                </div>
-            </div>
-        </section>
-        <section id="Contacts" class="sec5">
-            <h2 class="fonts">Contacts</h2>
-            <div>
-                <p>Email: <b><a href="mailto:Achyutaryaa@gmail.com" style="text-decoration: none;"
-                            rel="noopener">Achyutaryaa@gmail.com</a></b></p>
-                <div class="contact-div">
-                    <a class="contact-link" target="_blank" rel="noopener">
-                        <img src="pics/gd.jpg" alt="Google dev Profile">
-                    </a>
-                    <a class="contact-link" target="_blank" rel="noopener">
-                        <img src="pics/gt.jpg" alt="GitHub Profile">
-                    </a>
-                    <a class="contact-link" target="_blank" rel="noopener">
-                        <img src="pics/hr.jpg" alt="HackerRank Profile">
-                    </a>
-                    <a class="contact-link" target="_blank" rel="noopener">
-                        <img src="pics/linkedin.jpg" alt="Linkedin Profile">
-                    </a>
-                    <a class="contact-link" target="_blank" rel="noopener">
-                        <img src="pics/w3s.png" alt="W3School Profile">
-                    </a>
-                    <a class="contact-link" target="_blank" rel="noopener">
-                        <img src="pics/fb.png" alt="Facebook Profile">
-                    </a>
-                    <a class="contact-link" target="_blank" rel="noopener">
-                        <img src="pics/ig.jpg" alt="Instagram Profile">
-                    </a>
-                    <a class="contact-link" class="contact-link" target="_blank" rel="noopener">
-                        <img src="pics/tw.jpg" alt="Twitter Profile">
-                    </a>
-                    <a class="contact-link" target="_blank" rel="noopener">
-                        <img src="pics/yt.jpg" alt="YouTube Profile">
-                    </a>
-                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-container">
-            <div>
-                <h3>Address:</h3>
-                <p>Samastipur, Bihar, Bharat.</p>
-                <p>You can give feedback through <a href="mailto:Achyutaryaa@gmail.com" style="color: inherit;">email</a>.</p>
-            </div>
-            <div>
-                <h3>Developer:</h3>
-                <h2 class="name">Achyutarya Raaz</h2>
-            </div>
-            <div>
-                <p>last update: <b>Jun 28, 2024</b></p>
-            </div>
+    <footer class="contact-field" id="contact">
+        <h3 class="email">
+            Email: 
+            <a href="mailto:Achyutaryaa@gmail.com">Achyutaryaa@gmail.com</a>
+        </h3>
+        <div class="social-container">
+            <a href="https://www.facebook.com/KingAaryaa" target="_blank"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+            <a href="https://www.twitter.com/oneAaryaa" target="_blank"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+            <a href="https://www.linkedin.com/in/Achyutaryaa" target="_blank"><i class="fab fa-linkedin-in"></i> <span>LinkedIn</span></a>
+            <a href="https://www.instagram.com/oneAaryaa" target="_blank"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
+            <span>Last Update: <b>17 Sep, 2024</b></span>
         </div>
-        <h6>Copyright &copy; 2023. All Right Reserved.</h6>
+        <div class="copy-right">Copyright &copy; 2023. All rights reserved!</div>
     </footer>
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
