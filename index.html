@@ -1,119 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achyutarya Raaz</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- set achyutarya, achyutaryaa, aarya, aarya raaz, achyutarya raaz, king gullu, gullu, king as meta -->
+    <title>Achyutarya Raaz | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
+        <div id="logo">
+            <h1>AR</h1>
+        </div>
         <nav>
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#project">PROJECT</a>
-            <a href="#skill">SKILL</a>
-            <a href="#contact">CONTACT</a>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#service">service</a></li>
+                <li><a href="#project">projects</a></li>
+                <li><a href="#skill">skills</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section class="portfolio" id="home">
-            <div class="portfolio-pic">
-                <img src="./pics/Aarya.png" alt="portfolio Pic">
-            </div>
-            <div class="portfolio-details">
-                <h1 id="name">Achyutarya Raaz</h1>
-                <h3>A Front-End Developer</h3>
-                <p id="resume">Download <span>resume</span></p>
-            </div>
-        </section>
-        <section class="about-field" id="about">
-            <h2 class="nav-ref">Abouts</h2>
-            <p id="info">
-                I am a 3nd-year computer science student at Quantum University, Roorkee. My passion for computers and
-                technology began at a young age, and it has been a driving force in my life ever since. I am dedicated
-                to expanding my knowledge and skills in computer science, with a particular interest in software
-                development and cyber security. Throughout my studies, I have actively sought out opportunities to work
-                on various projects and further enhance my understanding of programming languages and algorithms.
-
-                Outside of my academic pursuits, I have also participated in coding competitions and hackathons, where I
-                have had the opportunity to collaborate with peers and put my problem-solving abilities to the test.
-                These experiences have not only strengthened my technical skills but have also provided me with valuable
-                insights into working effectively within a team. <br><br>
-
-                In addition to my technical interests, I am also passionate about contributing to the community. I have
-                volunteered with local organizations to teach basic computer skills to underprivileged children,
-                allowing me to share my knowledge and foster a greater appreciation for the potential of technology.
-                <br><br>
-
-                As I continue on my academic journey, I am committed to seizing every opportunity to further my skills,
-                broaden my understanding, and ultimately make a positive impact in the field of computer science. I am
-                excited about the possibilities that lie ahead and am eager to continue learning and growing as a
-                computer scientist.
-            </p>
-            <div><a href="https://consciousplanet.org/en" target="_blank">SAVE SOIL</a></div>
-        </section>
-        <section class="project-field" id="project">
-            <h2 class="nav-ref">Projects</h2>
-            <div class="hexagon-container">
-                <div class="hexagon"><a href="https://achyutaryaa.github.io/portfolio/">Personal Website</a></div>
-                <div class="hexagon"><a href="https://achyutaryaa.github.io/freeCodeCamp-gameProject/">Game Project</a></div>
-                <div class="hexagon"><a href="https://achyutaryaa.github.io/todo-list/">To-Do list</a></div>
-                <div class="hexagon"><a href="https://achyutaryaa.github.io/calculate-triangle-area">Area calculator for triangle</a></div>
-                <div class="hexagon"><a href="https://achyutaryaa.github.io/temperature-calculator/">Temperature Convertor</a></div>
-            </div>
-        </section>
-        <section class="skill-field" id="skill">
-            <h2 class="nav-ref">Skills</h2>
-            <div class="skill-container">
-                <div class="front-end">
-                    <h2 class="nav-ref">Front-End</h2>
-                    <div class="skill-flex">
-                        <div>
-                            <div class="skill-hex hex1 bottom" id="html">HTML</div>
-                            <div class="skill-hex hex2 top" id="css">CSS</div>
-                            <div class="skill-hex hex3 bottom" id="js">JavaScript</div>
-                        </div>
-                        <div>
-                            <div class="skill-hex hex1 top" id="bt">BOOTSTRAP</div>
-                            <div class="skill-hex hex2 bottom" id="react">REACT</div>
-                            <div class="skill-hex hex3 top" id="angular">ANGULAR</div>
-                        </div>
-                    </div>
+        <section id="home">
+            <div id="home-container">
+                <div id="image">
+                    <img src="/pics/Aarya.png" alt="main picture">
                 </div>
-                <div class="back-end">
-                    <h2 class="nav-ref">Back-End</h2>
-                    <div class="skill-flex">
-                        <div>
-                            <div class="skill-hex hex1 bottom" id="c">C Lang</div>
-                            <div class="skill-hex hex2 top" id="cpp">C++</div>
-                            <div class="skill-hex hex3 bottom" id="java">JAVA</div>
-                        </div>
-                        <div>
-                            <div class="skill-hex hex1 top" id="sql">SQL</div>
-                            <div class="skill-hex hex2 bottom" id="python">PYTHON</div>
-                            <div class="skill-hex hex3 top" id="php">PHP</div>
-                        </div>
-                    </div>
+                <div id="home-content">
+                    <h1>Achyutarya Raaz</h1>
+                    <h4>A Frontend Web Developer</h4>
+                    <button>
+                        <a href="" target="_blank">Download<span>RESUME</span></a>
+                    </button>
                 </div>
             </div>
+        </section>
+        <section id="about">
+            <h1 class="titles">About</h1>
+            <div id="about-container">
+                <div id="about-content">
+                    <p>
+                        Hello! I'm Achyutarya Raaz, a passionate Frontend Web Developer with a knack for creating dynamic and responsive web applications. With a strong foundation in HTML, CSS, and JavaScript, I strive to build user-friendly and visually appealing websites. My journey in web development started with a curiosity for how websites work, which quickly turned into a full-fledged passion. Over the years, I have honed my skills and worked on various projects that showcase my ability to turn ideas into reality. When I'm not coding, you can find me exploring new technologies, reading tech blogs, or contributing to open-source projects. I believe in continuous learning and am always looking for opportunities to grow and improve my skill set. Feel free to browse through my portfolio to see some of the projects I've worked on. If you have any questions or would like to collaborate, don't hesitate to reach out!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="service">
+            <h1 class="titles">Services</h1>
+            <div id="service-container">
+                <!-- Item will append here dynamically -->
+            </div>
+        </section>
+        <section id="project">
+            <h1 class="titles">Project</h1>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sit assumenda eum, sed recusandae, quibusdam nemo molestiae voluptas dolore quis ipsa odio eaque dolorem, doloribus repellendus totam quasi ducimus a illo et neque! Maiores quod, quo recusandae cumque vitae in eius totam labore cum harum modi, omnis fugiat quas cupiditate molestiae a ratione amet sit!
+            </div>
+            <div id="project-container">
+                <!-- Contents will dynamically appear here with the heps of JavaScript -->
+            </div>
+        </section>
+        <section id="skill">
+            <h1 class="titles">Skills</h1>
+            <div id="skill-container">
+                <!-- Here, elements will apear dynamically -->
+            </div>
+            <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo expedita tenetur veniam, atque rerum dolorum quod perspiciatis quia vel facilis dolores, temporibus saepe ex nostrum esse optio aut deleniti aliquam accusantium debitis quaerat distinctio inventore, voluptatibus a? Numquam totam dolores repellendus iure, sit vel perspiciatis velit deleniti nemo facilis dicta alias labore sint eius ducimus, saepe corrupti blanditiis reiciendis? Molestiae incidunt recusandae vero ullam fugiat unde assumenda cum molestias, eius, dicta eveniet est quia blanditiis mollitia nam ut aliquam magni reiciendis similique in quos rem. Dignissimos voluptatibus nulla perferendis suscipit corporis, dolorem minima voluptas eveniet ut temporibus nemo eaque nobis esse nihil adipisci sapiente odio atque dolore! Officia cum quo totam, commodi error eligendi qui? Iure, suscipit. Nostrum deleniti et ipsum quod enim voluptate alias quia quos animi fuga commodi, excepturi porro quisquam! Impedit eaque nam eum illo cupiditate nulla quia libero. Nobis veritatis alias saepe architecto dicta at officia?
             </div>
         </section>
     </main>
+    <button onclick="topFunc()" id="myBtn" title="Go to top">Top</button>
     <footer class="contact-field" id="contact">
         <h3 class="email">
             Email: 
             <a href="mailto:Achyutaryaa@gmail.com">Achyutaryaa@gmail.com</a>
         </h3>
         <div class="social-container">
-            <a href="https://www.facebook.com/KingAaryaa" target="_blank"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
-            <a href="https://www.twitter.com/oneAaryaa" target="_blank"><i class="fab fa-twitter"></i><span>Twitter</span></a>
-            <a href="https://www.linkedin.com/in/Achyutaryaa" target="_blank"><i class="fab fa-linkedin-in"></i> <span>LinkedIn</span></a>
-            <a href="https://www.instagram.com/oneAaryaa" target="_blank"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
-            <span>Last Update: <b>17 Sep, 2024</b></span>
+            <a href="https://www.facebook.com/KingAaryaa" rel="noopener" target="_blank"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+            <a href="https://www.instagram.com/oneAaryaa" rel="noopener" target="_blank"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
+            <a href="https://www.twitter.com/oneAaryaa" rel="noopener" target="_blank"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+            <a href="https://www.linkedin.com/in/Achyutaryaa" rel="noopener" target="_blank"><i class="fab fa-linkedin-in"></i> <span>LinkedIn</span></a>
+            <span>Last Update: <b>17 Nov, 2024</b></span>
         </div>
         <div class="copy-right">Copyright &copy; 2023. All rights reserved!</div>
     </footer>
