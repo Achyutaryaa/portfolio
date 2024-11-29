@@ -42,25 +42,25 @@ const serviceList = [
   // web dev
   {
       title: "Web Development",
-      image: "/pics/Designer.jpeg",
+      image: "pics/Designer.jpeg",
       description: "web development web development web development web development web development web development "
   },
   // web dev
   {
       title: "Web Development",
-      image: "/pics/Designer.jpeg",
+      image: "pics/Designer.jpeg",
       description: "web development web development web development web development web development web development "
   },
   // web dev
   {
       title: "Web Development",
-      image: "/pics/Designer.jpeg",
+      image: "pics/Designer.jpeg",
       description: "web development web development web development web development web development web development "
   },
   // web dev
   {
       title: "Web Development",
-      image: "/pics/Designer.jpeg",
+      image: "pics/Designer.jpeg",
       description: "web development web development web development web development web development web development "
   }
 ];
