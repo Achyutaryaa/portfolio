@@ -23,7 +23,13 @@ section:not(:first-of-type) {
     padding: 20px; /* Add desired padding */
 }
 
+section {
+    border-bottom: 2px solid black;
+}
 
+section:last-child, section:first-child {
+    border: 0;
+}
 
 #myBtn {
     display: none;
@@ -49,8 +55,14 @@ section:not(:first-of-type) {
     font-weight: bold;
 }
 
-/* ================================================================== */
+.paragraph {
+    margin: 20px;
+    text-align: justify;
+    color: rgb(88, 87, 87);
+}
 
+/* ================================================================== */
+/* header-container */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4d5;
@@ -142,6 +154,8 @@ nav a:hover {
 
 #home-container {
     display: flex;
+    height: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -243,9 +257,9 @@ nav a:hover {
 /* ABOUT */
 
 #about-content p {
-    text-align: justify;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 2em;
 }
+
 #about-content p::first-letter {
     color: red;
     font-size: 2em;
@@ -461,7 +475,7 @@ nav a:hover {
 /* ================================================================================================================== */
 /* Contact or footer */
 .contact-field {
-    background-color: rgb(50, 49, 49);
+    background-color: rgb(84, 83, 83);
     color: white;
     padding: 3em;
     padding-top: 5em;
@@ -512,15 +526,31 @@ nav a:hover {
 /* ========================================================================================= */
 
 /* media query start */
+@media screen and (max-width: 700px) {
+    /* home-container */
+    #home-container {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    #image {
+        overflow: hidden;
+        right: 50%;
+    }
+    #home-content {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    /* skill-container */
+    
+}
+
+
+
 @media screen and (max-width: 600px) {
 
-    section {
-        border-bottom: 2px solid black;
-    }
-
-    section:last-child {
-        border: 0;
-    }
 
     .titles {
         font-size: 1em;
@@ -558,9 +588,13 @@ nav a:hover {
         top: auto;
     }
 
+    nav ul {
+        padding: 5px 0;
+    }
+
     nav a {
-        padding: 5px 10px;
-        font-size: .9em;
+        padding: 5px 7px;
+        font-size: 1em;
     }
 
     /* ============================================================== */
