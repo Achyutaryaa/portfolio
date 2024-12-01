@@ -37,6 +37,26 @@ function topFunc() {
   if (headerRect.top === 0) {
     document.body.style.paddingTop = `${totalHeaderHeight}px`;
   }
+
+  
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        if(window.innerWidth > 750) {
+            e.preventDefault();
+    
+            let target = document.querySelector(this.getAttribute('href'));
+            let headerOffset = totalHeaderHeight; // height of your header
+            let elementPosition = target.offsetTop;
+            let offsetPosition = elementPosition - headerOffset;
+    
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
 // ====================================================================================================
 // about-container
 

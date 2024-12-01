@@ -169,6 +169,7 @@ nav a:hover {
     align-items: center;
     align-content: center;
     z-index: 0;
+    /* border: 1px solid red; */
 }
 
 #image img {
@@ -425,8 +426,6 @@ nav a:hover {
 #skill-container {
     display: flex;
     flex-wrap: wrap;
-    /* overflow: hidden; */
-    /* position: relative; */
     justify-content: center;
     margin: 30px 20px;
 }
