@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="service.css">
 </head>
 <body>
+    <a id="home" href="index.html">Back to home</a>
     <form action="" method="post">
         <h1>Service Form</h1>
         <fieldset>
@@ -25,7 +26,7 @@
             </p>
         </fieldset>
         <fieldset>
-            <legend>Requirement:</legend>
+            <legend>Requirements:</legend>
             <label for="service">Choose your Requirement:</label>
             <select name="service" id="service" title="services" required>
                 <option value="WebDev" selected>Web Development</option>
@@ -38,8 +39,11 @@
 
             </textarea>
         </fieldset>
-        <button type="button" onclick="submitServiceForm()">Submit</button>
-    </form>
+        <p>
+            <button type="reset">Reset</button>
+            <button type="button" onclick="submitServiceForm()">Submit</button>
+        </p>
+        </form>
     <script src="database.js"></script>
 </body>
 </html>

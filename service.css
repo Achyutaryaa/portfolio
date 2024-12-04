@@ -6,14 +6,33 @@
 
 body {
     background-color: black;
+    color: white;
+}
+
+#home {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-left: 1em;
+    margin-top: 1em;
+    display: block;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+#home:hover {
+    background-color: hsl(0, 00%, 90%);
 }
 
 form {
-    max-width: 600px;
     width: 100%;
-    margin: 20px auto;
+    max-width: 600px;
+    margin: 0 auto;
     background-color: grey;
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 5px;
     color: white;
     font-size: 18px;
@@ -25,8 +44,9 @@ form h1 {
 }
 
 fieldset {
-    padding: 20px;
+    padding: 10px 20px;
     width: 100%;
+    margin: 10px 0;
 }
 
 legend {
