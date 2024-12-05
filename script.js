@@ -70,7 +70,12 @@ document.getElementById('resume').href = 'https://drive.google.com/file/d/1CcYYK
 // about-container
 
 const aboutContent = document.querySelector("#about-content p");
-aboutContent.innerHTML = "Hi! I am a pre-final year <b><i>computer science</i></b> student at <b><i>Quantum University, Roorkee</i></b>. This enthusiasm has driven me to explore and deepen my knowledge in the field, particularly in software development and cybersecurity. My dedication to learning is reflected in my academic pursuits, where I have consistently sought opportunities to work on projects that enhance my understanding of programming languages, algorithms, and real-world problem-solving. <br><br>Beyond academics, I have actively participated in coding competitions and hackathons. These experiences have allowed me to collaborate with peers, tackle challenging problems, and strengthen both my technical and teamwork skills. They have also provided me with a platform to apply my knowledge in innovative and practical ways.<br><br> In addition to my technical interests, I am passionate about giving back to the community. I have volunteered with local organizations to teach basic computer skills to underprivileged children, sharing my knowledge and inspiring others to appreciate the transformative power of technology.<br><br> As I progress in my academic journey, I am committed to leveraging every opportunity to expand my skill set, deepen my understanding of computer science, and contribute meaningfully to the field. I am excited to embrace the challenges and opportunities that lie ahead and look forward to continuing my growth as a computer scientist while making a positive impact.";
+aboutContent.innerHTML = `Hi! I am a pre-final year <b><i>computer science</i></b> student at <b><i>Quantum University, Roorkee</i></b>. This enthusiasm has driven me to explore and deepen my knowledge in the field, particularly in software development and cybersecurity. My dedication to learning is reflected in my academic pursuits, where I have consistently sought opportunities to work on projects that enhance my understanding of programming languages, algorithms, and real-world problem-solving. <br><br>
+
+Beyond academics, I have actively participated in coding competitions and hackathons. These experiences have allowed me to collaborate with peers, tackle challenging problems, and strengthen both my technical and teamwork skills.<br><br> 
+ 
+
+As I progress in my academic journey, I am committed to leveraging every opportunity to expand my skill set, deepen my understanding of computer science, and contribute meaningfully to the field. I am excited to embrace the challenges and opportunities that lie ahead and look forward to continuing my growth as a computer scientist while making a positive impact.`;
 
 
 
@@ -90,7 +95,7 @@ const serviceList = [
       title: "Database Managment",
       image: "pics/db-man.jpeg",
       description: "We're providing database managemet services. If you are our <b>First Customer</b> for <b>website designing</b>, we will provide you <b>one year free</b> service. Our services make strong bonding between you and your customers.",
-      price: "20000/-"
+      price: "15000/-"
   }
 ];
 
@@ -141,7 +146,7 @@ const projectList = [
     name: 'Personal Portfolio',
     description: 'This is a project about a website that I created for a fictional company. The website is fully responsive and was created using HTML, CSS, and JavaScript.',
     image: 'images/project1.png',
-    link: "achyutaryaa.github.io/portfolio/"
+    link: "https://achyutaryaa.github.io/portfolio/"
   },
   {
     name: 'Game Website',
@@ -254,20 +259,5 @@ for(let i = 0; i < skillList.length; i++) {
     skillContent.appendChild(skillCard);
     
   }
-  skillContainer.appendChild(skillContent);
-}
-
-for(let i = 0; i < skillLijst.length; i++) {
-  const skillHead = document.createElement("h3");
-  skillHead.textContent = skillList[1][i].name;
-
-  const skillCard = document.createElement("div");
-  skillCard.classList.add("skill-card");
-  skillCard.appendChild(skillHead);
-
-  const skillContent = document.createElement("div");
-  skillContent.classList.add("skill-content");
-  skillContent.appendChild(skillCard);
-
   skillContainer.appendChild(skillContent);
 }

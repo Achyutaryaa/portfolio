@@ -7,6 +7,7 @@
 body {
     background-color: black;
     color: white;
+    padding: 15px;
 }
 
 #home {
@@ -30,7 +31,7 @@ body {
 form {
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 5px auto;
     background-color: grey;
     padding: 10px 20px;
     border-radius: 5px;

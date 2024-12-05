@@ -176,7 +176,7 @@ nav a:hover {
 
 #image img {
     height: 100%;
-    overflow: hidden;
+    width: 100%;
 }
 
 
@@ -192,12 +192,13 @@ nav a:hover {
     color: #6739d2;
     text-align: center;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 
 #home-content button {
     width: fit-content;
-    background-color: #333;
+    background-color: #618f45;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -366,7 +367,6 @@ nav a:hover {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    position: relative;
 }
 
 #project-container > div {
@@ -438,6 +438,13 @@ nav a:hover {
     text-align: justify;
 }
 
+.project-link {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
 /* ================================================================================================================== */
 /* Skill */
 
@@ -551,7 +558,7 @@ nav a:hover {
 
     #image img {
         width: 100%;
-        height: auto;
+        height: 100%;
 
     }
     
@@ -574,22 +581,26 @@ nav a:hover {
     /* home-container */
     #home-container {
         flex-direction: column;
-        padding: 50px 0;
-    }
+        justify-content: left;
 
+        /* border: 1px solid red; */
+    }
+    
     #image {
         overflow: hidden;
-        right: 50%;
+        width: 100%;
+        height: 55%;
+        /* border: 1px solid red; */
     }
     #home-content {
         display: flex;
         flex-direction: column;
-
+        margin-top: 2em;
     }
 
     /* project */
     #project-container div {
-        animation: scroll-left 12s linear infinite;
+        animation-duration: 12s;
     }
 
     /* skill-container */
@@ -652,6 +663,7 @@ nav a:hover {
         flex-direction: column;
         width: 100%;
         height: 100%;
+        position: absolute;
     }
     #home-container > div {
         position: absolute;
@@ -659,9 +671,8 @@ nav a:hover {
     }
     
     #image {
+        width: 100%;
         height: 100%;
-        width: auto;
-        right: 0;
         /* border: 1px solid red; */
     }
     
@@ -669,9 +680,9 @@ nav a:hover {
         position: relative;
         height: inherit;
         width: auto;
+        transform: translateX(-25%);
+        overflow: hidden;
         /* border: 1px solid red; */
-        left: 50%;
-        transform: translateX(-10%);
     }
     
     #home-content {
@@ -688,7 +699,7 @@ nav a:hover {
 
     #home-content h1 {
         font-size: 2rem;
-        background-color: #ffffffd6;
+        background-color: #fff;
         padding: 2px 20px;
         border-radius: 45px 45px 20px 20px;
     }

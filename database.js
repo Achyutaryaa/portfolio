@@ -12,7 +12,7 @@ function submitServiceForm() {
     serviceBody.innerHTML = "";
     serviceBody.style.backgroundColor = "green";
     const h2 = document.createElement("h2");
-    h2.textContent = "You have successfully submitted service request. I will contact soon...";
+    h2.textContent = "Sorry! We are not accepting any request yet. This portfolio is under development.";
     const homeBtn = document.createElement('a');
     homeBtn.id = 'home';
     homeBtn.textContent = 'Back to home';
