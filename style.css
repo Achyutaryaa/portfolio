@@ -273,6 +273,13 @@ nav a:hover {
     font-weight: bold;
 }
 
+
+.w3Schools iframe {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 300px;
+}
 /* =================================================================================== */
 /* Service */
 #service-container {
@@ -596,6 +603,11 @@ nav a:hover {
         display: flex;
         flex-direction: column;
         margin-top: 2em;
+    }
+
+    /* about */
+    .w3Schools iframe {
+        width: calc(100% - 20px);
     }
 
     /* project */

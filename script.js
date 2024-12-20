@@ -87,14 +87,14 @@ const serviceList = [
   {
       title: "Website Designing",
       image: "pics/web-dev.jpeg",
-      description: "Our team will help you to transfter your business from offline to online and help you to grow your business! We will develop modern and more attractive website and provice two years <b>free maintainance</b>.",
+      description: "I am delivering services of web Development. It involves web design and maintenance.",
       price: "10000/-"
   },
   // web dev
   {
       title: "Database Managment",
       image: "pics/db-man.jpeg",
-      description: "We're providing database managemet services. If you are our <b>First Customer</b> for <b>website designing</b>, we will provide you <b>one year free</b> service. Our services make strong bonding between you and your customers.",
+      description: "I am delivering services of Database Management. It involves schema design and maintenance.",
       price: "15000/-"
   }
 ];
@@ -117,12 +117,12 @@ for(let i = 0; i < serviceList.length; i++) {
 
   const priceDiv = document.createElement("div");
   priceDiv.classList.add("service-price-items")
-  const price = document.createElement("p");
-  price.classList.add("service-price-item");
-  price.textContent = serviceList[i].price;
+  // const price = document.createElement("p");
+  // price.classList.add("service-price-item");
+  // price.textContent = serviceList[i].price;
   const serviceLink = document.createElement("a");
   serviceLink.classList.add("service-price-item");
-  priceDiv.appendChild(price);
+  // priceDiv.appendChild(price);
   priceDiv.appendChild(serviceLink);
   serviceLink.href = "/service.html";
   serviceLink.textContent = "Request Now";
