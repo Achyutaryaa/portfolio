@@ -124,7 +124,11 @@ for(let i = 0; i < serviceList.length; i++) {
   serviceLink.classList.add("service-price-item");
   // priceDiv.appendChild(price);
   priceDiv.appendChild(serviceLink);
+<<<<<<< Updated upstream
   serviceLink.href = "/portfolio/service.html";
+=======
+  serviceLink.href = "service/service.html";
+>>>>>>> Stashed changes
   serviceLink.textContent = "Request Now";
 
   const serviceContent = document.createElement("div");
@@ -228,36 +232,134 @@ for (let i = 0; i < projectList.length; i++) {
 // =================================================================================================
 // skills
 
-const skillContainerHead = ["Frontend Web Dev", "Backend Web Dev", "Programming Languages"];
+const skills = {
+  'HTML' : {
+    'covered' : ['Navigation', 'Lists', 'Table', 'Forms'],
 
-const skillList = [
-  // frontend
-  ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    'uncovered' : []
+  },
 
-  // backends
-  ["Node.js", "PHP", "SQL"],
+  'CSS' : {
+    'covered' : ['Color', 'Background', 'Box Model', 'Fonts', 'Icons', 'List', 'Table', 'Forms', 'Display', 'Position', 'Overflow', 'Pseudo-classes', 'Pseudo-elements', 'Navigation Bar', '2D-Transform', '3D-Transform', 'Transitions', 'Animations', 'Image-filters', 'Box-sizing', 'Media-Query', 'Flex'],
 
-  // Programming
-  ["C", "C++", "Java", "DSA"]
-];
+    'uncovered' : ['Dropdown', 'Image-spliter', 'Image-Gallery', 'Specificity', 'Math-functions', 'Pagination', 'Grid', 'Responsive']
+  },
 
-const skillContainer = document.getElementById("skill-container");
 
-for(let i = 0; i < skillList.length; i++) {
-  const skillContent = document.createElement("div");
-  const h2 = document.createElement('h2');
-  skillContent.appendChild(h2).textContent = skillContainerHead[i];
-  for(let j = 0; j < skillList[i].length; j++) {
-    const skillHead = document.createElement("h4");
-    skillHead.textContent = skillList[i][j];
-    
-    const skillCard = document.createElement("div");
-    skillCard.classList.add("skill-card");
-    skillCard.appendChild(skillHead);
-    
-    skillContent.classList.add("skill-content");
-    skillContent.appendChild(skillCard);
-    
+  'Bootstrap' : {
+    'covered' : ['Basics', 'Grid Basic', 'Typography', 'Table', 'Buttons', 'Forms', 'Navbar', 'Pagination'],
+
+    'uncovered' : ['Dropdown', 'Filters', 'Grid Advance']
+  },
+
+
+  'JavaScript' : {
+    'covered' : ['Basics', 'Functions', 'Objects', 'Sets', 'Maps', 'String Operations', 'Numbers', 'Array', 'Date'],
+    'uncovered' : ['Bitwise', 'RegExp', 'Hoisting', 'JSON', 'Debugging', 'Get/Set']
+  },
+
+
+  'C Language' : {
+    'covered' : ['Basics', 'Loops', 'Input/Output', 'Array', 'String', 'Pointer', 'Functions', 'Maths', 'Scopes', 'Structure', 'Enums', 'Dynamic Programming'],
+    'uncovered' : ['File Handling', 'Exceptions']
+  },
+
+
+  'C++' : {
+    'covered' : ['Basics', 'Input/Output', 'Array', 'String', 'Pointer', 'Refrence', 'Maths', 'Functions', 'OOPS', 'Vector', 'List', 'Linked-list', 'Stack', 'Queue', 'Map', 'Iterator', 'Algorithms', 'Date & Time'],
+    'uncovered' : ['Tree', 'Graph', 'File', 'Expections', 'Bitmanipulation', 'String formatting', 'Padding']
+  },
+
+
+  'Java' : {
+    'covered' : ['Basics', 'Array', 'String', 'Maths', 'OOPs', 'Date & Time', 'Data Strucures'],
+    'uncovered' : ['API', 'Exceptions', 'RegEx', 'Threads', 'Lambda', 'File Handling']
+  },
+
+  'SQL' : {
+    'covered' : ['Basics', 'Selection', 'Updation', 'Deletion', 'Basic Query', 'Joins'],
+
+    'uncovered' : ['Intersection', 'Union', 'Injection', 'Hoisting', 'Advance Query']
+  },
+
+  'DSA' : {
+    'covered' : ['Sorting', 'Linked List'],
+
+    'uncovered' : ['Tree', 'Graph']
   }
-  skillContainer.appendChild(skillContent);
+};
+
+// target skill-container div
+const skillContainer = document.getElementById('skill-container');
+
+for(const skill in skills) {
+  const skillCard = document.createElement('div');
+  skillCard.classList.add('skill-card');
+
+  const infoDiv = document.createElement('div');
+  infoDiv.classList.add('info-div');
+  const skillHead = document.createElement('h3');
+  skillHead.textContent = skill;
+  const indicator = document.createElement('span');
+  indicator.textContent = ((skills[skill].covered.length /(skills[skill].covered.length + skills[skill].uncovered.length)) * 100).toFixed(0) + "%";
+  infoDiv.appendChild(skillHead);
+  infoDiv.appendChild(indicator);
+
+  const progressDiv = document.createElement('div');
+  progressDiv.classList.add('progress-div');
+  const progressBar = document.createElement('progress');
+  progressBar.value = skills[skill].covered.length;
+  progressBar.max = skills[skill].covered.length + skills[skill].uncovered.length;
+  progressDiv.appendChild(progressBar);
+
+  const toggler = document.createElement('button');
+  toggler.classList.add('skill-toggler');
+  toggler.innerHTML = '&#11167;';
+  progressDiv.appendChild(toggler);
+
+  // div to display covered and uncovered skill's details
+  const detailsDiv = document.createElement('div');
+  detailsDiv.classList.add('details-div');
+
+  const coveredSpanContainer = document.createElement('div');
+  coveredSpanContainer.classList.add('covered-span-container');
+  skills[skill].covered.forEach(element => {
+      const coveredSpan = document.createElement('span');
+      coveredSpan.textContent = element;
+      coveredSpan.classList.add('covered-span');
+      coveredSpanContainer.appendChild(coveredSpan);
+  });
+  
+  const uncoveredSpanContainer = document.createElement('div');
+  coveredSpanContainer.classList.add('uncovered-span-container');
+  skills[skill].uncovered.forEach(element => {
+      const uncoveredSpan = document.createElement('span');
+      uncoveredSpan.textContent = element;
+      uncoveredSpan.classList.add('uncovered-span');
+      uncoveredSpanContainer.appendChild(uncoveredSpan);
+  });
+
+  detailsDiv.appendChild(coveredSpanContainer);
+  detailsDiv.appendChild(uncoveredSpanContainer);
+
+  // add event listener to toggler
+  toggler.addEventListener('click', () => {
+    detailsDiv.classList.toggle('visibility');
+    if(detailsDiv.classList.contains('visibility')) {
+      toggler.style.transform = 'rotate(180deg)';
+      toggler.style.backgroundColor = 'black';
+    }
+    else {
+      toggler.style.transform = 'rotate(0deg)';
+      toggler.style.backgroundColor = 'transparent';
+    }
+
+  });
+
+  skillCard.appendChild(infoDiv);
+  skillCard.appendChild(progressDiv);
+  skillCard.appendChild(detailsDiv);
+
+  skillContainer.appendChild(skillCard);
 }
+
