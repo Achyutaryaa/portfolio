@@ -124,7 +124,7 @@ for(let i = 0; i < serviceList.length; i++) {
   serviceLink.classList.add("service-price-item");
   // priceDiv.appendChild(price);
   priceDiv.appendChild(serviceLink);
-  serviceLink.href = "service/service.html";
+  serviceLink.href = "/portfolio/service/service.html";
   serviceLink.textContent = "Request Now";
 
   const serviceContent = document.createElement("div");
