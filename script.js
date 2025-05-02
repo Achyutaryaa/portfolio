@@ -124,11 +124,7 @@ for(let i = 0; i < serviceList.length; i++) {
   serviceLink.classList.add("service-price-item");
   // priceDiv.appendChild(price);
   priceDiv.appendChild(serviceLink);
-<<<<<<< Updated upstream
-  serviceLink.href = "/portfolio/service.html";
-=======
   serviceLink.href = "service/service.html";
->>>>>>> Stashed changes
   serviceLink.textContent = "Request Now";
 
   const serviceContent = document.createElement("div");
