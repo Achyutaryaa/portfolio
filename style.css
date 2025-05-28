@@ -648,6 +648,9 @@ nav a:hover {
 
 @media screen and (max-width: 720px) {
     /* home-container */
+    .paragraph {
+        font-family: sans-serif;
+    }
     #home-container {
         flex-direction: column;
         justify-content: left;
