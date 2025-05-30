@@ -358,4 +358,3 @@ for(const skill in skills) {
 
   skillContainer.appendChild(skillCard);
 }
-
